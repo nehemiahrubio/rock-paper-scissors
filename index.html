@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <label class="theme-toggle">
+            <input type="checkbox" id="theme-switch" />
+            Toggle Dark Mode (it’s kind of cool)
+        </label>
+    </header>
+
+    <!-- Quirky Instructions Box -->
+    <div class="instructions">
+        <strong>How to Play:</strong>
+        <ul>
+            <li>Pick Rock, Paper, or Scissors.</li>
+            <li>See what the computer picks.</li>
+            <li>First to reach 5 wins... (just kidding, play as much as you want!)</li>
+        </ul>
+        <div id="random-tip"></div>
+    </div>
+
+    <main>
+        <div class="buttons">
+            <button id="rock">🪨 Rock</button>
+            <button id="paper">📄 Paper</button>
+            <button id="scissors">✂️ Scissors</button>
+        </div>
+
+        <div class="result">
+            <p id="player-choice">You chose: ...</p>
+            <p id="computer-choice">Computer chose: ...</p>
+            <p id="game-result">Result: ...</p>
+        </div>
+
+        <div class="scoreboard">
+            <p id="player-score">Your Score: 0</p>
+            <p id="computer-score">Computer Score: 0</p>
+        </div>
+        
+        <button id="play-again" style="display: none;">Play Again</button>
+    </main>
+</body>
+</html>
